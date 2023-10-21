@@ -16,7 +16,10 @@ public class AnytownTest {
         int numberOfBedrooms, numberOfEmplyees, avgTurnover;  // 房屋的卧室数量、商店的员工数量和平均营业额
         boolean hasGarage;  // 房屋是否有车库
 
-        // 逐行读取建筑物数据
+        // 逐行读取建筑物数据：fileInput 是一个 Scanner 对象，它可以用来读取文件中的内容。
+        //hasNextLine() 方法检查文件是否还有未读取的行，如果有则返回 true，否则返回 false。
+        //nextLine() 方法读取文件中的下一行，并将其存储在 buildingData 变量中。因此，这个循环会一直读取文件中的行，直到文件中没有未读取的行为止。
+        //在每次循环中，buildingData 变量都会被更新为文件中的下一行。
         while (fileInput.hasNextLine()) {
             buildingData = fileInput.nextLine();
 
