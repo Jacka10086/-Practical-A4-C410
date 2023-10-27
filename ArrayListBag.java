@@ -19,7 +19,8 @@ public class ArrayListBag implements BagInterface {
         this.buildings.add(newEntry);  // 向ArrayList中添加新的Building对象
         return true;    
     }
-
+//这个方法首先使用 isEmpty() 方法检查 ArrayList 是否为空。如果 ArrayList 不为空，那么它使用 this.buildings.get(0) 获取 ArrayList 中的第一个元素，即索引为 0 的元素，
+//将其赋值给一个新的 Building 类型的变量 thisBuilding。然后，它使用 this.buildings.remove(0) 删除 ArrayList 中的第一个元素，并将其返回。如果 ArrayList 为空，那么它返回 null。
     public Building remove() {
         if(!isEmpty()) {
             Building thisBuilding = this.buildings.get(0);  // 获取ArrayList中索引为0的Building对象
