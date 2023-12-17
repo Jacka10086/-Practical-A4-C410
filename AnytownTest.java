@@ -44,7 +44,7 @@ public class AnytownTest {
                     System.out.println("Building not added");  // 添加建筑物失败
                 }
                 break;
-
+ 
                 case "H" :
                 System.out.println("House");  // 打印类型为房屋
                 numberOfBedrooms = Integer.parseInt(buildingData.substring(marker3 + 1, marker4));
