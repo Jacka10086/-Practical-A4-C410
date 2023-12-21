@@ -48,6 +48,7 @@ public interface BagInterface {
      * @return 指定建筑物的个数
      */
     public int getFrequencyOf(Building anEntry);
+
     
     /**
      * 判断袋子中是否包含指定的建筑物
