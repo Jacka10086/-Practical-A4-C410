@@ -19,7 +19,7 @@ public class ArrayBagTest {
         String address, owner;
         int numberOfBedrooms, numberOfEmplyees, avgTurnover;
         boolean hasGarage;
-      
+       
         // 循环读取文件的每一行数据
         while (fileInput.hasNextLine()) {
             // 读取一行数据
